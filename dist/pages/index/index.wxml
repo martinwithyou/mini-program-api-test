@@ -1,0 +1,22 @@
+<block>
+    <view class="index">
+        <view class="title">与小程序原生融合的各种示例</view>
+        <view class="main">
+            <view class="wrapper">
+                <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" bindonclick="gotoWxParse" __fn_onClick="{{true}}">wxParse 示例</at-button>
+            </view>
+            <view class="wrapper">
+                <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" bindonclick="gotoEcharts" __fn_onClick="{{true}}">echarts-for-weixin 示例</at-button>
+            </view>
+            <view class="wrapper">
+                <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" bindonclick="gotoNative" __fn_onClick="{{true}}">混写原生页面示例</at-button>
+            </view>
+            <view class="wrapper">
+                <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" bindonclick="gotoChart" __fn_onClick="{{true}}">demo热图</at-button>
+            </view>
+            <view class="wrapper">
+                <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" bindonclick="gotoLineChart" __fn_onClick="{{true}}">多行折线图</at-button>
+            </view>
+        </view>
+    </view>
+</block>

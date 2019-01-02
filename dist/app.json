@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/testA/testA",
+    "pages/native/native",
+    "pages/index/index",
+    "pages/wxParse/wxParse",
+    "pages/echarts/echarts",
+    "pages/chart/chart",
+    "pages/lineChart/lineChart",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "color":"#666666",
+    "selectedColor":"#2e5e86",
+    "backgroundColor":"#f2f2f2",
+    "list": [
+      {
+        "pagePath": "pages/native/native",
+        "text": "评论",
+        "iconPath":"images/chat.png",
+        "selectedIconPath":"images/chat_focus.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"images/burger.png",
+        "selectedIconPath":"images/burger_focus.png"
+      },
+      {
+        "pagePath": "pages/echarts/echarts",
+        "text": "热图",
+        "iconPath":"images/chat.png",
+        "selectedIconPath":"images/chat_focus.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "条形图",
+        "iconPath":"images/chat.png",
+        "selectedIconPath":"images/chat_focus.png"
+      },
+      {
+        "pagePath": "pages/lineChart/lineChart",
+        "text": "折线图",
+        "iconPath":"images/chat.png",
+        "selectedIconPath":"images/chat_focus.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+
+.lineChart {
+  width: 100%;
+  height: 800rpx; }
+
+#mychart-dom-area {
+  width: 100%;
+  height: 600rpx;
+  border: 0 solid #333333; }

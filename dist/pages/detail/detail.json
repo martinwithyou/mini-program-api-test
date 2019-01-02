@@ -1,0 +1,11 @@
+{
+    "navigationBarBackgroundColor": "#2e5e86",
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "detail",
+    "backgroundColor": "#2e5e86",
+    "backgroundTextStyle": "light",
+    "usingComponents": {
+      "tab": "../../components/tab/tab"
+    }
+  }
+  

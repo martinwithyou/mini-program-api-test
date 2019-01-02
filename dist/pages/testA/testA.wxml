@@ -1,0 +1,132 @@
+<view class="native" bindtap="viewTap">
+    <audio src="{{src}}" id="myAudio"></audio>
+    <button type="primary" bindtap="audioPlay">播放</button>
+    <button type="primary" bindtap="audioPause">暂停</button>
+    <button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+    <button type="primary" bindtap="audioStart">回到开头</button>
+    <video
+      id="myVideo"
+      src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+      enable-danmu
+      danmu-btn
+      controls
+      ></video>
+      <view class="btn-area">
+      <input bindblur="bindInputBlur" class="input-style"/>
+      <button bindtap="bindSendDanmu">发送弹幕</button>
+    </view>
+    </view>
+    <view class="section tc">
+    <canvas style="width: 300px; height: 200px;" canvas-id="firstCanvas"></canvas>
+    <button bindtap="updateShareMenu">updateShareMenu</button>
+    <map
+    id="map"
+    longitude="113.324520"
+    latitude="23.099994"
+    scale="14"
+    controls="{{controls}}"
+    bindcontroltap="controltap"
+    markers="{{markers}}"
+    bindmarkertap="markertap"
+    polyline="{{polyline}}"
+    bindregionchange="regionchange"
+    show-location
+    style="width: 100%; height: 300px;"
+    ></map>
+    <view class="native-msg">{{msg}}</view>
+    <button bindtap="clickMe">点击我</button>
+    <button bindtap="setDisabled">要获取用户的地理位置时</button>
+    <button bindtap="setPlain">调用微信扫一扫能力</button>
+    <button bindtap="setLoading">show-toast</button>
+    <button bindtap="downLoad">download</button>
+    <button bindtap="upLoad">upLoad</button>
+    <button bindtap="webSocket">websocket</button>
+    <button bindtap="DNS">DNS</button>
+    <button bindtap="getStorage">getStorage</button>
+    <view class="item" wx:for="{{proList}}" bindtap='toDetail'
+      data-index="{{index}}">
+      <view class="item-left">
+        <image class="item-image" src="../../images/gaotie.jpg"></image>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>{{item.id}}-{{item.name}}</text>
+        </view>
+        <view class="item-title">
+          <text>phone number : {{item.phone}}</text>
+        </view>
+        <view class="item-title">
+          <text>email: {{item.email}}</text>
+        </view>
+        <view class="item-title">
+          <view class="details">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <button open-type="contact">
+          <image class="item-image" src="../../images/icon_1.jpg"/>
+        </button>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>{{title}}</text>
+        </view>
+        <view class="item-title">
+          <text>{{content}}</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details" bindtap="call">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+          <image class="item-image" src="../../images/icon_2.jpg"/>
+        </button>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>孔笙 Sheng Kong</text>
+        </view>
+        <view class="item-title">
+          <text>《大江大河》是通过国营经济、集体经济、个体经济去展现属于那个年代特有的情怀。</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details" bindtap="navigateTo">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <image class="item-image" src="../../images/gaotie.jpg"></image>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>改革开放</text>
+        </view>
+        <view class="item-title">
+          <text>改革开放40年 带你感受人、车、路的时代变迁 ｜ 交通文化</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,98 @@
+<view class="native" bindtap="viewTap">
+    <view class="item" wx:for="{{proList}}" bindtap='toDetail'
+      data-index="{{index}}">
+      <view class="item-left">
+        <image class="item-image" src="../../images/gaotie.jpg"></image>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>{{item.id}}-{{item.name}}</text>
+        </view>
+        <view class="item-title">
+          <text>phone number : {{item.phone}}</text>
+        </view>
+        <view class="item-title">
+          <text>email: {{item.email}}</text>
+        </view>
+        <view class="item-title">
+          <view class="details">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <button open-type="contact">
+          <image class="item-image" src="../../images/icon_1.jpg"/>
+        </button>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>{{title}}</text>
+        </view>
+        <view class="item-title">
+          <text>{{content}}</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details" bindtap="call">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+          <image class="item-image" src="../../images/icon_2.jpg"/>
+        </button>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>孔笙 Sheng Kong</text>
+        </view>
+        <view class="item-title">
+          <text>《大江大河》是通过国营经济、集体经济、个体经济去展现属于那个年代特有的情怀。</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details" bindtap="navigateTo">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="item">
+      <view class="item-left">
+        <image class="item-image" src="../../images/gaotie.jpg"></image>
+      </view>
+      <view class="item-right">
+        <view class="item-title">
+          <text>改革开放</text>
+        </view>
+        <view class="item-title">
+          <text>改革开放40年 带你感受人、车、路的时代变迁 ｜ 交通文化</text>
+        </view>
+        <view class="item-title">
+        </view>
+        <view class="item-title">
+          <view class="details">
+            查看详情
+          </view>
+        </view>
+      </view>
+    </view>
+    <tab myProperty="kkl" bindmyevent="handler" />
+    <text>{{text}}{{x}}</text>
+    <button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
+    <button bindtap="setPlain">点击设置以上按钮plain属性</button>
+    <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+    <button open-type="contact">进入客服会话</button>
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+      获取用户信息
+    </button>
+    <button open-type="openSetting">打开授权设置页</button>
+</view>

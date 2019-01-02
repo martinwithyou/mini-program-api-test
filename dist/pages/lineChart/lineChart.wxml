@@ -1,0 +1,5 @@
+<block>
+    <view class="lineChart">
+        <ec-canvas id="mychart-dom-area" __triggerObserer="{{ _triggerObserer }}" canvas-id="mychart-area" ec="{{ec}}"></ec-canvas>
+    </view>
+</block>

@@ -1,0 +1,10 @@
+{
+  "navigationBarBackgroundColor": "#2e5e86",
+  "navigationBarTextStyle": "#ffffff",
+  "navigationBarTitleText": "大江大河评论",
+  "backgroundColor": "#2e5e86",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "tab": "../../components/tab/tab"
+  }
+}
